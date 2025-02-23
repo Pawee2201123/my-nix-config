@@ -1,0 +1,15 @@
+/ login and auto start sway with tty
+- waybar
+- ricing sway
+- mako noti
+- all kinds of capture
+    - audio capture
+    - screen capture 
+    - video capture (\w audio or \wo audio)
+- foot terminal server
+- terminal flie manager (yazi)
+- git versin control
+- disko setup
+- clear cache
+- type japanese and thai
+

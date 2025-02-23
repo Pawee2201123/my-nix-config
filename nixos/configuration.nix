@@ -7,7 +7,7 @@
 {
     imports =
         [ # Include the results of the hardware scan.
-        ./hardware-configuration.nix
+            ./hardware-configuration.nix
             inputs.xremap-flake.nixosModules.default
         ];
 
@@ -34,9 +34,6 @@
 
 # Select internationalisation properties.
     i18n.defaultLocale = "en_US.UTF-8";
-    console = {
-        useXkbConfig = true;
-    };
 
     i18n.extraLocaleSettings = {
         LC_ADDRESS = "ja_JP.UTF-8";
@@ -50,26 +47,23 @@
         LC_TIME = "ja_JP.UTF-8";
     };
 
-# Configure keymap in X11
-    services.xserver = {
-        xkb = {
-            layout = "jp";
-            variant = "";
-        };
-        enable = true;
-        displayManager = {
-            gdm.enable = true;
-        };
+    console={
+        keyMap = "jp106";
     };
-    services.displayManager = {
+    programs.zsh={
         enable = true;
-        defaultSession = "sway";
+        loginShellInit = ''
+            if [[ $(id -u) -ge 1000 && $(tty) == "/dev/tty1" && -z $(pgrep sway) ]]; then
+                exec sway
+                    fi
+                    '';
     };
+    services.gnome.gnome-keyring.enable = true;
     programs.sway ={
         enable = true;
         wrapperFeatures.gtk = true;
     };
-    programs.zsh.enable = true;
+
     users.defaultUserShell = pkgs.zsh;
 
 # Define a user account. Don't forget to set a password with ‘passwd’.

@@ -8,17 +8,21 @@
         stateVersion = "24.11";
 
         packages = with pkgs; [
+#TUI
             tmux
-                wl-clipboard
-                fastfetch
-                htop
-                tree
-                fzf
-                swayimg
-                wev
-                firefox
-                librewolf
-                signal-desktop
+            fastfetch
+            htop
+            tree
+            fzf
+#sway stuff
+            wl-clipboard
+            swayimg
+            waybar
+            wev
+#app
+            firefox
+            librewolf
+            signal-desktop
         ];
     };
     programs.home-manager.enable = true;
