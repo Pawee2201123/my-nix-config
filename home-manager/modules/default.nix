@@ -6,6 +6,7 @@
     ./foot.nix
     ./neovim.nix
     ./tmux.nix
+    ./yazi.nix
   ];
 }
 

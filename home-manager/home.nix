@@ -14,6 +14,7 @@
             htop
             tree
             fzf
+            yazi
 #sway stuff
             wl-clipboard
             swayimg

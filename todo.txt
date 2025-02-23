@@ -6,10 +6,15 @@
     - audio capture
     - screen capture 
     - video capture (\w audio or \wo audio)
+- add recording status to waybar
 - foot terminal server
 - terminal flie manager (yazi)
 - git versin control
 - disko setup
 - clear cache
 - type japanese and thai
+- hybernation
+- daragon-drop
+- anki
+
 
