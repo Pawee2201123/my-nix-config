@@ -57,7 +57,7 @@
             };
 
             keymaps = [
-                { on = [ "<C-n>" ]; run = "ripdrag \"$@\" -x 2>/dev/null &" }
+                { on = [ "<C-n>" ]; run = "ripdrag \"$@\" -x 2>/dev/null &" };
             ];
         };
     };
