@@ -3,7 +3,7 @@
 {
     packages = with pkgs; [
         ffmpeg
-        7-Zip
+        p7zip
         jq
         poppler
         fd
