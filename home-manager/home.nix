@@ -29,7 +29,7 @@
             librewolf
             signal-desktop
             zathura
-            thunar
+            xfce.thunar
         ];
     };
     programs.home-manager.enable = true;
