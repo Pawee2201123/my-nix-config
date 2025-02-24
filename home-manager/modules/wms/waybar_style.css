@@ -3,7 +3,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     /*font-family: "DejaVuSansMNerdFontMono",Roboto, Helvetica, Arial, sans-serif;*/
 	font-family: JetBrainsMono Nerd Font;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 window#waybar {
