@@ -8,6 +8,7 @@
 - mako noti
 - add recording status to waybar
 - foot terminal server
+- ssh
 - terminal flie manager (yazi)
     - daragon-drop
 - git versin control
