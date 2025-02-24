@@ -10,7 +10,7 @@
 				font = "JetBrainsMono Nerd Font:style=Regular:size=20,Noto Sans Mono CJK JP:style=Regular:size=20";
 			};
 			colors = {
-				alpha=0.75;
+				#alpha=0.75;
 				flash="7f7f00";
 				flash-alpha=0.5;
 				background="1a1b26";
