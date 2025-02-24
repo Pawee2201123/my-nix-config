@@ -10,6 +10,7 @@
         packages = with pkgs; [
 #TUI
             kitty
+            ghostty
             tmux
             fastfetch
             htop
