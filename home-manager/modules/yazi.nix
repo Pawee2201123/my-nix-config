@@ -4,15 +4,15 @@
     home = {
         packages = with pkgs; [
             ffmpeg
-                p7zip
-                jq
-                poppler
-                fd
-                ripgrep
-                fzf
-                zoxide
-                imagemagick
-                wl-clipboard
+            p7zip
+            jq
+            poppler
+            fd
+            ripgrep
+            fzf
+            zoxide
+            imagemagick
+            wl-clipboard
         ];
     };
 
@@ -22,8 +22,8 @@
             manager = {
                 ratio = [
                     1
-                        4
-                        3
+                    4
+                    3
                 ];
                 sort_by = "natural";
                 sort_sensitive = true;
@@ -44,9 +44,9 @@
                 ueberzug_scale = 1;
                 ueberzug_offset = [
                     0
-                        0
-                        0
-                        0
+                    0
+                    0
+                    0
                 ];
             };
 
@@ -57,9 +57,7 @@
             };
 
             keymaps = [
-            { on = [ "<C-n>" ]; run = '''
-                shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
-                    ''' }
+                { on = [ "<C-n>" ]; run = "ripdrag \"$@\" -x 2>/dev/null &" }
             ];
         };
     };
