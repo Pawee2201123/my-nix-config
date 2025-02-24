@@ -29,6 +29,7 @@
             librewolf
             signal-desktop
             zathura
+            thunar
         ];
     };
     programs.home-manager.enable = true;
