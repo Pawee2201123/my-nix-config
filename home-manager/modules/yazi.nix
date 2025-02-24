@@ -59,7 +59,7 @@
                 manager.prepend_keymap = [
                 {
                     on = "<C-n>";  # Ctrl + N
-                    run = ''shell -- ripdrag  "$@"&'';
+                    run = ''shell -- ripdrag  $@'';
                     desc = "Drag-and-drop with Dragon";  # Description for the binding
                 }
                 ];
