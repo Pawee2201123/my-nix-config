@@ -19,7 +19,8 @@
     programs.yazi = {
         enable = true;
     };
-    home.file.".config/yazi/config.toml".source = ./yazi.cfg; 
+    home.file.".config/yazi/yazi.toml".source = ./yazi.cfg; 
+    home.file.".config/yazi/keymap.toml".source = ./yazi-keymap.cfg; 
 
 }
 
