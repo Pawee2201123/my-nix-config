@@ -19,6 +19,7 @@
             yazi
             broot
             ripdrag
+            xdragon
 #sway stuff
             wl-clipboard
             swayimg
