@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-    packages = with pkgs; [
+    with pkgs; [
         ffmpeg
         p7zip
         jq
