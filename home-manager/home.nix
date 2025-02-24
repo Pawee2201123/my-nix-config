@@ -15,6 +15,7 @@
             tree
             fzf
             yazi
+            broot
 #sway stuff
             wl-clipboard
             swayimg

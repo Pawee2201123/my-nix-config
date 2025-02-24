@@ -9,12 +9,12 @@
 - add recording status to waybar
 - foot terminal server
 - terminal flie manager (yazi)
+    - daragon-drop
 - git versin control
 - disko setup
 - clear cache
 - type japanese and thai
 - hybernation
-- daragon-drop
 - anki
 
 
