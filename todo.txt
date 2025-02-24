@@ -1,11 +1,11 @@
 / login and auto start sway with tty
-- waybar
-- ricing sway
-- mako noti
+/ waybar
+/ ricing sway
 - all kinds of capture
     - audio capture
     - screen capture 
     - video capture (\w audio or \wo audio)
+- mako noti
 - add recording status to waybar
 - foot terminal server
 - terminal flie manager (yazi)

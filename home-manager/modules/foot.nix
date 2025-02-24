@@ -4,6 +4,7 @@
 {
 	programs.foot = {
 		enable = true;  # Enable foot terminal emulator
+        server.enable = true;
 		settings = 	{
 			main = {
 				font = "JetBrainsMono Nerd Font:style=Regular:size=20,Noto Sans Mono CJK JP:style=Regular:size=20";
