@@ -4,15 +4,15 @@
     home = {
         packages = with pkgs; [
             ffmpeg
-            p7zip
-            jq
-            poppler
-            fd
-            ripgrep
-            fzf
-            zoxide
-            imagemagick
-            wl-clipboard
+                p7zip
+                jq
+                poppler
+                fd
+                ripgrep
+                fzf
+                zoxide
+                imagemagick
+                wl-clipboard
         ];
     };
 
@@ -22,8 +22,8 @@
             manager = {
                 ratio = [
                     1
-                    4
-                    3
+                        4
+                        3
                 ];
                 sort_by = "natural";
                 sort_sensitive = true;
@@ -44,9 +44,9 @@
                 ueberzug_scale = 1;
                 ueberzug_offset = [
                     0
-                    0
-                    0
-                    0
+                        0
+                        0
+                        0
                 ];
             };
 
@@ -55,10 +55,16 @@
                 macro_workers = 10;
                 bizarre_retry = 5;
             };
+            keymap = {
+                manager.prepend_keymap = [
+                {
+                    on = "<C-n>";  # Ctrl + N
+                    run = ''shell -- ripdrag -x -i -T "$1"'';
+                    desc = "Drag-and-drop with Dragon";  # Description for the binding
+                }
+                ];
+            };
 
-            keymaps = [
-                { on = [ "<C-n>" ]; run = "ripdrag \"$@\" -x 2>/dev/null &" };
-            ];
         };
     };
 }
