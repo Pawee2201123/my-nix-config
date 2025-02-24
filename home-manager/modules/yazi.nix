@@ -55,6 +55,7 @@
                 macro_workers = 10;
                 bizarre_retry = 5;
             };
+
             keymaps = [
             { on = [ "<C-n>" ]; run = '''
                 shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
@@ -63,3 +64,4 @@
         };
     };
 }
+
