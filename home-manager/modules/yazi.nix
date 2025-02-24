@@ -1,6 +1,19 @@
 { config, lib, pkgs, ... }:
 
 {
+    packages = with pkgs; [
+        ffmpeg
+        7-Zip
+        jq
+        poppler
+        fd
+        ripgrep
+        fzf
+        zoxide
+        imagemagick
+        wl-clipboard
+    ];
+
     programs.yazi = {
         enable = true;
         settings = {

@@ -25,6 +25,7 @@
             firefox
             librewolf
             signal-desktop
+            zathura
         ];
     };
     programs.home-manager.enable = true;
