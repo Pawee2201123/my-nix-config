@@ -8,7 +8,7 @@
         stateVersion = "24.11";
 
         packages = with pkgs; [
-#TUI
+#CLI app
             kitty
             ghostty
             tmux
@@ -18,6 +18,7 @@
             fzf
             yazi
             broot
+            ripdrag
 #sway stuff
             wl-clipboard
             swayimg
