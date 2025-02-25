@@ -4,6 +4,7 @@ let
 zshHistory = "${config.xdg.cacheHome}/zsh/history";
 in
 {
+    home.file.".zshrc".source = ./zsh.cfg; 
     programs.zsh = {
         enable = true;
         enableCompletion = true;
@@ -12,6 +13,5 @@ in
         history.path = zshHistory;
 
     };
-    home.file.".zshrc".source = ./zsh.cfg; 
 
 }
