@@ -4,6 +4,8 @@
 	programs.neovim = {
 		enable = true;
 		defaultEditor = true;
+        viAlias = true;
+        vimAlias = true;
 		extraConfig = ''
 			set number relativenumber
 			set tabstop=4       " Number of spaces a <Tab> counts for
