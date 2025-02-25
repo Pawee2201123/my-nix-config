@@ -11,8 +11,7 @@
 #CLI app
             kitty
             ghostty
-            tmux
-            fastfetch
+            tmux fastfetch
             htop
             tree
             fzf
@@ -25,6 +24,7 @@
             swayimg
             waybar
             wev
+            networkmanagerapplet
 #app
             firefox
             librewolf
