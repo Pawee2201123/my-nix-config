@@ -10,6 +10,11 @@ in
         syntaxHighlighting.enable = true;
         history.size = 1000;
         history.path = zshHistory;
+        loginShellInit = ''
+            if [[ $(id -u) -ge 1000 && $(tty) == "/dev/tty1" && -z $(pgrep sway) ]]; then
+                exec sway
+                    fi
+                    '';
 
         initExtra = ''
             autoload -U colors && colors

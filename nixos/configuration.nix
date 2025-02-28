@@ -50,14 +50,6 @@
     console={
         keyMap = "jp106";
     };
-    programs.zsh={
-        enable = true;
-        loginShellInit = ''
-            if [[ $(id -u) -ge 1000 && $(tty) == "/dev/tty1" && -z $(pgrep sway) ]]; then
-                exec sway
-                    fi
-                    '';
-    };
     services.gnome.gnome-keyring.enable = true;
     programs.sway ={
         enable = true;
