@@ -16,8 +16,8 @@
         ];
     };
 
-    home.file.".config/yazi/yazi.toml".source = .config/yazi/yazi.toml; 
-    home.file.".config/yazi/keymap.toml".source = .config/yazi/keymap.toml; 
+    home.file.".config/yazi/yazi.toml".source = ./config/yazi/yazi.toml; 
+    home.file.".config/yazi/keymap.toml".source = ./config/yazi/keymap.toml; 
 
 }
 
