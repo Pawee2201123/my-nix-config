@@ -1,12 +1,14 @@
 { ... }: {
-  imports = [
-    ./wms
-    ./zsh.nix
-    ./git.nix
-    ./foot.nix
-    ./neovim.nix
-    ./tmux.nix
-    ./yazi.nix
-  ];
+    imports = [
+        ./foot.nix
+        ./git.nix
+        ./neovim.nix
+        ./nm-applet.nix
+        ./sway.nix
+        ./tmux.nix
+        ./waybar.nix
+        ./yazi.nix
+        ./zsh.nix
+    ];
 }
 
