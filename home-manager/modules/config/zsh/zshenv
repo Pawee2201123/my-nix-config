@@ -1,2 +1,2 @@
-echo setopt no_global_rcs >> ~/.zshenv
+setopt no_global_rcs
 
