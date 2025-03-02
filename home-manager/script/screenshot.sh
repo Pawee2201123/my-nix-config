@@ -76,5 +76,7 @@ elif [[ "$partial" == true && "$directory" == true ]]; then
 elif [[ "$partial" == true && "$clipboard" == true ]]; then
     screenshot_partial_clipboard
 else
-    echo "Error: Invalid co
+    echo "Error: Invalid combination of flags."
+    exit 1
+fi
 

@@ -7,6 +7,7 @@
             waybar
             networkmanager
             grim
+            slurp
             wl-clipboard
             mako
             wev
