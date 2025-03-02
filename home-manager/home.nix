@@ -1,7 +1,6 @@
 { config, pkgs, ...}: {
     imports = [
         ./modules
-        ./script
     ];
     home = {
         username = "sisyphus";
