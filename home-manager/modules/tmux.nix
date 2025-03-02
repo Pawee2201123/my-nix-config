@@ -38,6 +38,8 @@
 # Alternate between windows with Alt+h and Alt+l without prefix
             bind-key  h select-window -t :-
             bind-key  l select-window -t :+
+# Rename windows
+            bind-key r rename-window
             '';
     };
 }

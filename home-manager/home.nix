@@ -1,6 +1,7 @@
 { config, pkgs, ...}: {
     imports = [
         ./modules
+        ./script
     ];
     home = {
         username = "sisyphus";
@@ -21,7 +22,7 @@
             xdragon
 
 #GUI app
-            firefox
+            keepassxc
             librewolf
             signal-desktop
             zathura

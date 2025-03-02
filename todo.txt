@@ -18,5 +18,7 @@
 - hybernation
 - anki
 - stylix
+- setup sleep shutdown restart
+
 
 
