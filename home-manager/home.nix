@@ -25,6 +25,7 @@
             librewolf
             signal-desktop
             zathura
+            anki
             xfce.thunar
         ];
     };
