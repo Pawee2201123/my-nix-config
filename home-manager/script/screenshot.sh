@@ -9,7 +9,8 @@ mkdir -p "$SAVE_DIR"
 # Function to send notifications using mako
 send_notification() {
     local message=$1
-    makoctl show -t "Screenshot" -m "$message"
+    # Use mako's notification system (works via DBus or can be called directly)
+    echo "$message" | mako
 }
 
 # Function to take a full-screen screenshot and save to the specified directory
