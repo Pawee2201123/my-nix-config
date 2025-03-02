@@ -26,6 +26,7 @@
             signal-desktop
             zathura
             anki
+            vesktop
             xfce.thunar
         ];
     };

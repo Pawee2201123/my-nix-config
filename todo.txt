@@ -17,5 +17,6 @@
 - type japanese and thai
 - hybernation
 - anki
+- stylix
 
 
