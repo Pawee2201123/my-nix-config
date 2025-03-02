@@ -56,6 +56,15 @@
         enable = true;
         wrapperFeatures.gtk = true;
     };
+#setup fcitx5
+    i18n.inputMethod = {
+        type = "fcitx5";
+        enable = true;
+        fcitx5.addons = with pkgs; [
+            fcitx5-mozc
+            fcitx5-gtk
+        ];
+    };
 
     users.defaultUserShell = pkgs.zsh;
     programs.zsh.enable = true;

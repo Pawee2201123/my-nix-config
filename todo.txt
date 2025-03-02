@@ -10,7 +10,7 @@
 - foot terminal server
 - ssh
 - terminal flie manager (yazi)
-    - daragon-drop
+    / daragon-drop
 - git versin control
 - disko setup
 - clear cache
