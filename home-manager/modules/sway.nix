@@ -13,7 +13,7 @@
             wev
         ];
     };
-    
+    services.mako.enable = true;
 
 
 
