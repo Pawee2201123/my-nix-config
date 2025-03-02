@@ -60,7 +60,7 @@
     i18n.inputMethod = {
         type = "fcitx5";
         enable = true;
-        waylandFrontend = true;
+        fcitx5.waylandFrontend = true;
         fcitx5.addons = with pkgs; [
             fcitx5-mozc
             fcitx5-gtk
