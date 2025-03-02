@@ -28,6 +28,8 @@
             anki
             vesktop
             xfce.thunar
+# user script
+            (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh)
         ];
     };
     programs.home-manager.enable = true;
