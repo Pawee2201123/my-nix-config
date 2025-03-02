@@ -19,7 +19,6 @@
             broot
             ripdrag
             xdragon
-
 #GUI app
             keepassxc
             librewolf
@@ -29,7 +28,7 @@
             vesktop
             xfce.thunar
 # user script
-            (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh)
+            (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
         ];
     };
     programs.home-manager.enable = true;
