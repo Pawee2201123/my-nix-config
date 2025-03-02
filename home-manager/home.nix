@@ -19,13 +19,8 @@
             broot
             ripdrag
             xdragon
-#sway stuff
-            wl-clipboard
-            swayimg
-            waybar
-            wev
-            networkmanagerapplet
-#app
+
+#GUI app
             firefox
             librewolf
             signal-desktop
