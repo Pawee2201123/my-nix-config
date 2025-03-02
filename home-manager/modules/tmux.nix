@@ -39,7 +39,6 @@
             bind-key  h select-window -t :-
             bind-key  l select-window -t :+
 # Rename windows
-            unbind-key r
             bind-key r command-prompt -I "#W" "rename-window '%%'"
             '';
     };
