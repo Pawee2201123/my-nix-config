@@ -66,7 +66,6 @@
             fcitx5-gtk
         ];
     };
-    services.xserver.desktopManager.runXdgAutostartIfNone = true;
 
 
     users.defaultUserShell = pkgs.zsh;
