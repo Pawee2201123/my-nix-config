@@ -12,8 +12,6 @@
             wev
         ];
     };
-    services.mako.enable = true;
-    services.network-manager-applet.enable=true;
 
 
 

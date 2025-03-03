@@ -52,6 +52,9 @@
         keyMap = "jp106";
     };
     services.gnome.gnome-keyring.enable = true;
+    services.mako.enable = true;
+    services.network-manager-applet.enable=true;
+
     programs.sway ={
         enable = true;
         wrapperFeatures.gtk = true;
