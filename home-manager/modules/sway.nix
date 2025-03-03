@@ -16,7 +16,7 @@
 
 
     services.network-manager-applet.enable=true;
-    #services.mako.enable=true;
+    services.mako.enable=true;
 
 
     home.file.".config/sway/config".source = ./config/sway/config;
