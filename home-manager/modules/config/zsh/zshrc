@@ -24,3 +24,8 @@ alias grep='grep --color=auto'
 alias ff='fastfetch'
 alias aria2c='aria2c --disable-ipv6'
 alias fcd='cd $(find . -type d -print | fzf)'
+alias nrs='sudo nixos-rebuild switch --flake ./'
+alias hms='home-manager switch --flake ./' 
+
+
+
