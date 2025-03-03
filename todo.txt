@@ -1,3 +1,4 @@
+realist task
 / login and auto start sway with tty
 / waybar
 / ricing sway
@@ -7,18 +8,24 @@
     - video capture (\w audio or \wo audio)
 - mako noti
 - add recording status to waybar
-- foot terminal server
+/ foot terminal server
 - ssh
 - terminal flie manager (yazi)
     / daragon-drop
 - git versin control
 - disko setup
 - clear cache
-- type japanese and thai
+/ type japanese and thai
 - hybernation
-- anki
+/ anki
 - stylix
 - setup sleep shutdown restart
+Idealist task
+- do the home-config way (available only to that user)
+- perfectly reproducible (eg. use variable for username etc.)
+    - disko
+
+
 
 
 

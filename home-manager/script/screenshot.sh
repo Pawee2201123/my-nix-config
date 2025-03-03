@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Directory where you want to save screenshots (can be modified)
-SAVE_DIR="$HOME/Pictures/Screenshots"
+SAVE_DIR="$HOME/pic/screenshot"
 
 # Make sure the directory exists
 mkdir -p "$SAVE_DIR"
@@ -10,7 +10,7 @@ mkdir -p "$SAVE_DIR"
 send_notification() {
     local message=$1
     # Use mako's notification system (works via DBus or can be called directly)
-    echo "$message" | mako
+    notify-send "$message"
 }
 
 # Function to take a full-screen screenshot and save to the specified directory
