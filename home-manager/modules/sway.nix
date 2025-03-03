@@ -8,7 +8,7 @@
             grim
             slurp
             wl-clipboard
-            mako
+            #mako
             libnotify
             wev
         ];
