@@ -2,7 +2,6 @@
 
 {
     home = {
-
         packages = with pkgs; [
             waybar
             networkmanager
@@ -14,6 +13,8 @@
         ];
     };
     services.mako.enable = true;
+    services.network-manager-applet.enable=true;
+
 
 
 
