@@ -19,6 +19,7 @@
             broot
             ripdrag
             xdragon
+            yt-dlp
 #GUI app
             keepassxc
             librewolf
