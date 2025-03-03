@@ -20,6 +20,7 @@
             ripdrag
             xdragon
             yt-dlp
+            mpv
 #GUI app
             keepassxc
             librewolf
