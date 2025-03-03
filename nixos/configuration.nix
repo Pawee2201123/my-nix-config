@@ -90,7 +90,6 @@
             home-manager
             wget
             git
-            mako
     ];
 
 #fonts
