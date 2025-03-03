@@ -14,6 +14,7 @@
     };
 
 
+    services.network-manager-applet.enable=true;
 
 
     home.file.".config/sway/config".source = ./config/sway/config;
