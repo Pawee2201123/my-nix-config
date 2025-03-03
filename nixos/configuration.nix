@@ -54,7 +54,6 @@
     services.gnome.gnome-keyring.enable = true;
     services.network-manager-applet.enable=true;
 
-    programs.mako.enable = true;
     programs.sway ={
         enable = true;
         wrapperFeatures.gtk = true;
@@ -92,6 +91,7 @@
             home-manager
             wget
             git
+            mako
     ];
 
 #fonts
