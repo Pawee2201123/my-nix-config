@@ -52,7 +52,6 @@
         keyMap = "jp106";
     };
     services.gnome.gnome-keyring.enable = true;
-    services.network-manager-applet.enable=true;
 
     programs.sway ={
         enable = true;
