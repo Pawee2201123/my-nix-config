@@ -29,6 +29,7 @@
             xournalpp
             anki
             vesktop
+            thunderbird
             xfce.thunar
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))

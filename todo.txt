@@ -18,7 +18,7 @@ realist task
 - hybernation
 / anki
 - setup xdg user directory
-- setup sleep shutdown restart
+/ setup sleep shutdown restart menu
 Idealist task
 - stylix
 - do the home-config way (available only to that user)
