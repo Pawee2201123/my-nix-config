@@ -8,6 +8,7 @@
         ./waybar.nix
         ./yazi.nix
         ./zsh.nix
+        ./xdg-user-dirs.nix
     ];
 }
 
