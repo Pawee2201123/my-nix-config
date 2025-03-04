@@ -16,7 +16,7 @@ input "type:pointer" accel_profile flat
 
 output * bg ./wpp.png fill
 
-bindsym $mod+Shift+x exec swaylock -f -c 000000
+bindsym $mod+Shift+x exec wlogout
 bindsym $mod+Return exec $term
 
 # Kill focused window
