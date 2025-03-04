@@ -3,6 +3,7 @@
 {
     home = {
         packages = with pkgs; [
+            wlogout
             waybar
             networkmanager
             grim
