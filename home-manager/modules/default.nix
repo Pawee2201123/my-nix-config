@@ -9,6 +9,7 @@
         ./yazi.nix
         ./zsh.nix
         ./xdg-user-dirs.nix
+        ./wlogout.nix
     ];
 }
 
