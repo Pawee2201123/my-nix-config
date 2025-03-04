@@ -18,9 +18,10 @@ realist task
 / type japanese and thai
 - hybernation
 / anki
-- stylix
+- setup xdg user directory
 - setup sleep shutdown restart
 Idealist task
+- stylix
 - do the home-config way (available only to that user)
 - perfectly reproducible (eg. use variable for username etc.)
     - disko

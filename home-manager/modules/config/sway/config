@@ -160,8 +160,8 @@ bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ t
 # Special keys to adjust brightness via brightnessctl
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-# Special key to take a screenshot with grim
-bindsym Print exec grim
+# Special key to take a screenshot with grim and satty
+bindsym Print exec grim -g "$(slurp -o -r -c '#ff0000ff')" -t ppm - | satty --filename - --fullscreen --output-filename ~/pic/screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png --copy-command wl-copy
 # Border configuration
 set $cl_high #5D0E41
 set $cl_indi #A0153E
