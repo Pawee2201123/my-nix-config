@@ -7,6 +7,7 @@
             networkmanager
             grim
             slurp
+            flameshot
             wl-clipboard
             mako
             libnotify
