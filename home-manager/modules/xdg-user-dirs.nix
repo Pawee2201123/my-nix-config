@@ -1,6 +1,6 @@
 { ... }: 
 {
-    home-manager = {
+    home = {
         users.sisyphus = {
             xdg = {
                 userDirs = {
