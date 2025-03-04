@@ -32,6 +32,8 @@
             xfce.thunar
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
+#etc
+            xdg-user-dirs
         ];
     };
     programs.home-manager.enable = true;

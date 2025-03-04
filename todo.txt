@@ -4,16 +4,15 @@ realist task
 / ricing sway
 - all kinds of capture
     - audio capture
-    - screen capture 
+    / screen capture 
     - video capture (\w audio or \wo audio)
-- mako noti
-- add recording status to waybar
+/ mako noti
+? add recording status to waybar
 / foot terminal server
 - ssh
 - terminal flie manager (yazi)
     / daragon-drop
-- git versin control
-- disko setup
+/? git versin control
 - clear cache
 / type japanese and thai
 - hybernation
