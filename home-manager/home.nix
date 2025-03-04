@@ -26,6 +26,7 @@
             librewolf
             signal-desktop
             zathura
+            xournalpp
             anki
             vesktop
             xfce.thunar
