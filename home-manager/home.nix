@@ -31,6 +31,7 @@
             vesktop
             thunderbird
             xfce.thunar
+            localsend
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
 #etc
