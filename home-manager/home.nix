@@ -21,6 +21,7 @@
             xdragon
             yt-dlp
             mpv
+            android-tools
 #GUI app
             keepassxc
             librewolf
