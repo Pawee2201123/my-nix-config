@@ -22,6 +22,8 @@
             yt-dlp
             mpv
             android-tools
+            jmtpfs
+            rsync
 #GUI app
             keepassxc
             librewolf
