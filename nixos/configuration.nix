@@ -90,6 +90,8 @@
             home-manager
             wget
             git
+            android-tools
+
     ];
 
 #fonts
