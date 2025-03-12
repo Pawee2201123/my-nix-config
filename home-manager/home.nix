@@ -10,8 +10,7 @@
         packages = with pkgs; [
 #CLI app
             kitty
-            ghostty
-            tmux fastfetch
+            ghostty tmux fastfetch
             htop
             tree
             fzf
@@ -35,6 +34,7 @@
             thunderbird
             xfce.thunar
             localsend
+            steam
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
 #etc
