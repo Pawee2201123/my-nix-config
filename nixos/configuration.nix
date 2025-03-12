@@ -78,6 +78,22 @@
             dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
             localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
     };
+    hardware = {
+        graphics = {
+            enable = true;
+            enable32Bit = true;
+        };
+
+# Intel Integrated GPU
+        intel = {
+            enable = true;
+# Enable Vulkan support for Intel (optional but recommended for modern games)
+            vulkan = {
+                enable = true;
+            };
+        };
+    };
+
 
 # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.sisyphus = {
