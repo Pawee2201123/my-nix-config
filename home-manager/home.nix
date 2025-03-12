@@ -34,7 +34,6 @@
             thunderbird
             xfce.thunar
             localsend
-            steam
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
 #etc
