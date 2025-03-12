@@ -85,13 +85,6 @@
         };
 
 # Intel Integrated GPU
-        intel = {
-            enable = true;
-# Enable Vulkan support for Intel (optional but recommended for modern games)
-            vulkan = {
-                enable = true;
-            };
-        };
     };
 
 
