@@ -10,6 +10,7 @@
         ./zsh.nix
         ./xdg-user-dirs.nix
         ./wlogout.nix
+        ./steam.nix
     ];
 }
 
