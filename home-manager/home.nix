@@ -36,6 +36,7 @@
             localsend
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
+            (writeShellScriptBin "signal-multi-instances" (builtins.readFile ./script/signal-multi-instances.sh))
 #etc
             xdg-user-dirs
         ];
