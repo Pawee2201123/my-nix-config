@@ -21,6 +21,7 @@
             yt-dlp
             mpv
             android-tools
+            universal-android-debloater
             jmtpfs
             rsync
 #GUI app
