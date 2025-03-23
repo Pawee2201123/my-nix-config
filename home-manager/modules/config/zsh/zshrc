@@ -26,6 +26,7 @@ alias aria2c='aria2c --disable-ipv6'
 alias fcd='cd $(find . -type d -print | fzf)'
 alias nrs='sudo nixos-rebuild switch --flake ./'
 alias hms='home-manager switch --flake ./' 
+alias ss='ssh -p 2222 jpawee@192.168.1.42'
 
 
 
