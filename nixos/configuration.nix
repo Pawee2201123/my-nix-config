@@ -30,8 +30,8 @@
     networking.networkmanager.enable = true;
 
 # Set your time zone.
-    #time.timeZone = "Asia/Tokyo";
-    time.timeZone = "Asia/Bangkok";
+    time.timeZone = "Asia/Tokyo";
+    #time.timeZone = "Asia/Bangkok";
 
 # Select internationalisation properties.
     i18n.defaultLocale = "en_US.UTF-8";
