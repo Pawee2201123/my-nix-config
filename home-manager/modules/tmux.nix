@@ -28,6 +28,9 @@
 
 # Horizontal split key binding
             bind-key '-' split-window -v -c "#{pane_current_path}"
+
+# new windows keybind
+            bind-key c new-window -c "#{pane_current_path}"
             bind-key S new-session
 #vim-like keys
             bind-key -n M-h select-pane -L
