@@ -7,7 +7,10 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-		
+        disko = {
+            url = "github:nix-community/disko";
+			inputs.nixpkgs.follows = "nixpkgs";
+        };
 		xremap-flake.url = "github:xremap/nix-flake";
 	};
 
@@ -18,7 +21,11 @@
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			specialArgs = { inherit inputs; };
 			inherit system;
-			modules = [ ./nixos/configuration.nix ];
+			modules = [ 
+                ./nixos/configuration.nix 
+                disko.nixosModules.disko
+                ./nixos/disko.nix
+            ];
 		};
 		homeConfigurations.sisyphus = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
