@@ -24,7 +24,6 @@
 			modules = [ 
                 ./nixos/configuration.nix 
                 disko.nixosModules.disko
-                ./nixos/disko.nix
             ];
 		};
 		homeConfigurations.sisyphus = home-manager.lib.homeManagerConfiguration {
