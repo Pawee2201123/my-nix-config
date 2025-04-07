@@ -13,9 +13,9 @@
         ];
 
 # Bootloader.
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-
+boot.loader.grub.enable = true;
+boot.loader.grub.efiSupport = true;
+boot.loader.grub.efiInstallAsRemovable = true;
     networking.hostName = "nixos"; # Define your hostname.
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -144,7 +144,7 @@
 # networking.firewall.allowedTCPPorts = [ ... ];
 # networking.firewall.allowedUDPPorts = [ ... ];
 # Or disable the firewall altogether.
- networking.firewall.enable = false;
+ networking.firewall.enable = true;
 
 # This value determines the NixOS release from which the default
 # settings for stateful data, like file locations and database versions

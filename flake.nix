@@ -23,7 +23,7 @@
 			inherit system;
 			modules = [ 
                 ./nixos/configuration.nix 
-                disko.nixosModules.disko
+                inputs.disko.nixosModules.disko
             ];
 		};
 		homeConfigurations.sisyphus = home-manager.lib.homeManagerConfiguration {
