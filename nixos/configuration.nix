@@ -13,13 +13,13 @@
         ];
 
 # Bootloader.
-boot.loader.grub.enable = true;
-boot.loader.grub.efiSupport = true;
-boot.loader.grub.efiInstallAsRemovable = true;
+    boot.loader.grub.enable = true;
+    boot.loader.grub.efiSupport = true;
+    boot.loader.grub.efiInstallAsRemovable = true;
     networking.hostName = "nixos"; # Define your hostname.
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-        nix.settings.experimental-features = ["nix-command" "flakes"];
+    nix.settings.experimental-features = ["nix-command" "flakes"];
 
 
 # Configure network proxy if necessary
@@ -89,10 +89,11 @@ boot.loader.grub.efiInstallAsRemovable = true;
 # $ nix search wget
     environment.systemPackages = with pkgs; [
         neovim 
-            home-manager
-            wget
-            git
-
+        home-manager
+        wget
+        git
+        tree
+        tmux
     ];
 
 #fonts
