@@ -1,0 +1,14 @@
+# partition
+sudo nix \
+  --experimental-features "nix-command flakes" \
+  run github:nix-community/disko -- \
+  --mode disko ./nixos/disko.nix
+
+# gen /etc/nixos
+sudo nixos-generate-config --no-filesystems --root /mnt
+
+# install
+sudo nixos-install --root /mnt --flake ./#nixos
+
+# install home-manager
+home-manager swith --flake .
