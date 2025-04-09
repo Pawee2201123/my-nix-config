@@ -45,7 +45,7 @@
     };
     programs.home-manager.enable = true;
     #services
-    services.network-manager-applet.enable;
+    services.network-manager-applet.enable = true;
 
 
 
