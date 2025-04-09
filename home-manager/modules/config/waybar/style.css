@@ -9,8 +9,8 @@
 window#waybar {
     background-color: #00224D;
     /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
-    border-bottom: 3px solid #EFDE47;
-    color: #EFDE47;
+    border-bottom: 3px solid #000000;
+    color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -24,7 +24,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: #EFDE47;
 }
 */
 
@@ -33,7 +33,7 @@ window#waybar.termite {
 }
 
 window#waybar.chromium {
-    background-color: #EFDE47;
+    background-color: #000000;
     border: none;
 }
 
@@ -51,12 +51,12 @@ window#waybar.chromium {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #EFDE47;
 }
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #EFDE47;
 }
 
 #workspaces button.urgent {
@@ -65,7 +65,7 @@ window#waybar.chromium {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid #EFDE47;
 }
 
 #clock,
@@ -84,8 +84,8 @@ window#waybar.chromium {
 #mpd{
     padding: 0 10px;
     margin: 4px 1px;
-    color: #ffffff;
-    /*background : #EFDE47;*/
+    color: #EFDE47;
+    /*background : #000000;*/
 }
 
 #window,
@@ -104,7 +104,7 @@ window#waybar.chromium {
 }
 /*
 #clock {
-    background-color: #EFDE47;
+    background-color: #000000;
 }
 
 #battery {
@@ -112,20 +112,20 @@ window#waybar.chromium {
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
+    color: #EFDE47;
     background-color: #383838;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #EFDE47;
+        background-color: #EFDE47;
+        color: #000000;
     }
 }
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
+    color: #EFDE47;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -134,12 +134,12 @@ window#waybar.chromium {
 }
 
 label:focus {
-    background-color: #EFDE47;
+    background-color: #000000;
 }
 
 #cpu {
     background-color: #2ecc71;
-    color: #EFDE47;
+    color: #000000;
 }
 
 #memory {
@@ -164,7 +164,7 @@ label:focus {
 
 #pulseaudio {
     background-color: #f1c40f;
-    color: #EFDE47;
+    color: #000000;
 }
 
 #pulseaudio.muted {
@@ -251,7 +251,7 @@ label:focus {
 
 #keyboard-state {
     background: #97e1ad;
-    color: #EFDE47;
+    color: #000000;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
