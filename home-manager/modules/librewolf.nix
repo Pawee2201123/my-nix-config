@@ -177,7 +177,7 @@
             definedAliases = [ "gh" ];
           };
         };
-        default = "DuckDuckGo";
+        default = "ddg";
       };
       id = 0;
       containersForce = true;
