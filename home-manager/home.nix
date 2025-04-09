@@ -26,7 +26,7 @@
             rsync
 #GUI app
             keepassxc
-            librewolf
+            #librewolf
             signal-desktop
             zathura
             xournalpp

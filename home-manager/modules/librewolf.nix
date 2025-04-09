@@ -58,9 +58,9 @@
         engines = {
           # don't need these default ones
           "Amazon.com".metaData.hidden = true;
-          "Bing".metaData.hidden = true;
+          "bing".metaData.hidden = true;
           "eBay".metaData.hidden = true;
-          "DuckDuckGo" = {
+          "ddg" = {
             urls = [
               {
                 template = "https://duckduckgo.com";
@@ -74,7 +74,7 @@
             ];
             definedAliases = [ ",d" ];
           };
-          "Google" = {
+          "google" = {
             urls = [
               {
                 template = "https://google.com/search";
@@ -120,7 +120,7 @@
             ];
             definedAliases = [ "np" ];
           };
-          "YouTube" = {
+          "youtube" = {
             urls = [
               {
                 template = "https://www.youtube.com/results";
