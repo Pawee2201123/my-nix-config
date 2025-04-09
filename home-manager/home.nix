@@ -46,7 +46,11 @@
     programs.home-manager.enable = true;
     #services
     services.network-manager-applet.enable = true;
-
-
-
-                      }
+    gtk = {
+        enable = true;
+        iconTheme = {
+            package = pkgs.adwaita-icon-theme; # Or your preferred icon theme
+                name = "Adwaita"; # Or your preferred icon theme name
+        };
+    };
+}
