@@ -49,8 +49,8 @@
     gtk = {
         enable = true;
         iconTheme = {
-            package = pkgs.adwaita-icon-theme;
-            name = "adwaita";        
+            package = pkgs.rose-pine-icon-theme;
+            name = "rose-pine";        
         };
     };
 }
