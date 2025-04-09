@@ -10,7 +10,6 @@
         ./zsh.nix
         ./xdg-user-dirs.nix
         ./wlogout.nix
-        ./librewolf.nix
     ];
 }
 
