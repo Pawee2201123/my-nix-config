@@ -49,8 +49,8 @@
     gtk = {
         enable = true;
         iconTheme = {
-            package = pkgs.hicolor-icon-theme;
-            name = "hicolor";        
+            package = pkgs.adwaita-icon-theme;
+            name = "adwaita";        
         };
     };
 }
