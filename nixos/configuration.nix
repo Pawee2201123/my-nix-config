@@ -75,7 +75,7 @@
         extraGroups = [ "networkmanager" "wheel" "input"];
         packages = with pkgs; [];
     };
-    security.sudo.wheelNeedsPassword = false;
+    #security.sudo.wheelNeedsPassword = false;
 # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
