@@ -40,7 +40,6 @@
             #yubi-key
             yubioath-flutter
             yubikey-manager
-            yubikey-manager-qt
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
             (writeShellScriptBin "signal-multi-instances" (builtins.readFile ./script/signal-multi-instances.sh))
