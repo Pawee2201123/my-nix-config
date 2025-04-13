@@ -29,6 +29,6 @@
 
 
     home.file.".config/sway/config".source = ./config/sway/config;
-    home.file.".config/sway/wpp.png".source = ./config/sway/wpp.png; 
+    home.file.".config/sway/wpp.jpg".source = ./config/sway/wpp.jpg; 
 }
 
