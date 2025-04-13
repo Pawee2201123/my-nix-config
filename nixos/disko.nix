@@ -33,7 +33,7 @@
                 #additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
                 content = {
                   type = "btrfs";
-                  extraArgs = [ "-f" ];
+                  extraArgs = ["-L" "nixos" "-f"];
                   subvolumes = {
                     "/root" = {
                       mountpoint = "/";
@@ -60,4 +60,11 @@
       };
     };
   };
+  boot = {
+    kernelParams = [
+      "resume_offset=533760"
+    ];
+    resumeDevice = "/dev/disk/by-label/nixos";
+  };
+
 }
