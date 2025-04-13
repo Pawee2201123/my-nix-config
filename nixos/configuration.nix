@@ -75,7 +75,7 @@
         extraGroups = [ "networkmanager" "wheel" "input"];
         packages = with pkgs; [];
     };
-    #security.sudo.wheelNeedsPassword = false;
+    security.sudo.wheelNeedsPassword = false;
 # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
@@ -138,7 +138,7 @@
     services.pcscd.enable = true;
     security.pam.services = {
         login.u2fAuth = true;
-        sudo.u2fAuth = true;
+        #sudo.u2fAuth = true;
     };
 }
 
