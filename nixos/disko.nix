@@ -30,11 +30,11 @@
                 settings = {
                   allowDiscards = true;
                   keyFile = "/key/keyfile.lek";
-                  #preOpenCommands = ''
-                  #    mkdir -m 0755 -p /key
-                  #    sleep 2 # To make sure the usb key has been loaded
-                  #    mount -n -t vfat -o ro /dev/sda1 /key
-                  #    '';
+                  preOpenCommands = ''
+                      mkdir -m 0755 -p /key
+                      sleep 2 # To make sure the usb key has been loaded
+                      mount -n -t vfat -o ro /dev/disk/by-uuid/8BEE-8924 /key
+                      '';
                 };
                 #additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
                 content = {
@@ -72,10 +72,5 @@
     ];
     resumeDevice = "/dev/disk/by-label/nixos";
   };
-  boot.initrd.postDeviceCommands = lib.mkBefore ''
-      mkdir -m 0755 -p /key
-      sleep 2 # To make sure the usb key has been loaded
-      mount -n -t vfat -o ro /dev/sda1 /key
-      '';
 
 }
