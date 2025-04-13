@@ -28,10 +28,9 @@
                 # passwordFile = "/tmp/secret.key"; # Interactive
                 settings = {
                   allowDiscards = true;
-                  #keyFile = "/tmp/secret.key";
+                  crypttabExtraOpts = ["fido2-device=auto" "token-timeout=10"];
                 };
                 #additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
-                settings = {crypttabExtraOpts = ["fido2-device=auto" "token-timeout=10"];};
                 content = {
                   type = "btrfs";
                   extraArgs = [ "-f" ];
