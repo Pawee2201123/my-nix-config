@@ -11,4 +11,17 @@ sudo nixos-generate-config --no-filesystems --root /mnt
 sudo nixos-install --root /mnt --flake ./#nixos
 
 # install home-manager
-home-manager swith --flake .
+home-manager switch --flake .
+
+# switch to use ssh key
+git remote set-url origin git@github.com:your-username/your-repo.git
+
+# add yubi key
+sudo -E -s systemd-cryptenroll --fido2-device=auto /dev/nvme0n1p
+
+# remove luks keyslot
+cryptsetup luksRemoveKey /dev/sdX 
+
+# list key slot
+cryptsetup luksDump /dev/sdb4
+
