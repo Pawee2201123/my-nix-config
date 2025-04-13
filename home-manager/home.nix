@@ -37,7 +37,7 @@
             localsend
             brave
             syncthing
-            #yubi-key
+#yubi-key
             yubioath-flutter
             yubikey-manager
 # user script
