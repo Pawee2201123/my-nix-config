@@ -14,7 +14,7 @@ set $menu wmenu-run
 input * xkb_layout "jp"
 input "type:pointer" accel_profile flat
 
-output * bg ./wpp.png fill
+output * bg ./wpp.jpg fill
 
 bindsym $mod+Shift+x exec wlogout
 bindsym $mod+Return exec $term
