@@ -28,7 +28,12 @@
                 # passwordFile = "/tmp/secret.key"; # Interactive
                 settings = {
                   allowDiscards = true;
-                  crypttabExtraOpts = ["fido2-device=auto"];
+                  keyFile = "/key/keyfile.lek";
+                  preOpenCommands = ''
+                      mkdir -m 0755 -p /key
+                      sleep 2 # To make sure the usb key has been loaded
+                      mount -n -t vfat -o ro /dev/disk/by-uuid/8BEE-8924 /key
+                      '';
                 };
                 #additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
                 content = {
