@@ -8,6 +8,9 @@
             music = "\$HOME/music";
             pictures = "\$HOME/pic";
             videos = "\$HOME/vid";
+            desktop = "";
+            publicShare = "";
+            templates = "";
         };
     };
 }
