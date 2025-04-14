@@ -45,6 +45,7 @@
             (writeShellScriptBin "signal-multi-instances" (builtins.readFile ./script/signal-multi-instances.sh))
 #etc
             xdg-user-dirs
+            texlive.combined.scheme-basic
         ];
     };
     programs.home-manager.enable = true;
