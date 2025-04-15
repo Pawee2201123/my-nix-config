@@ -4,12 +4,13 @@
         ./waybar
         ./wlogout
         ./yazi
-        ./zsh
+        ./zsh.nix
         ./foot.nix
         ./git.nix
         ./neovim.nix
         ./tmux.nix
         ./xdg-user-dirs.nix
+        ./zathura.nix
     ];
 }
 
