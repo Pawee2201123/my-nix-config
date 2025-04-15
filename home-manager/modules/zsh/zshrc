@@ -29,4 +29,11 @@ alias hms='home-manager switch --flake ./'
 alias sshs='ssh -p 2222 jpawee@192.168.1.42'
 
 
-
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

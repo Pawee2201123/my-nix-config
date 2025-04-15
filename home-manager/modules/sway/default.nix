@@ -28,7 +28,7 @@
     };
 
 
-    home.file.".config/sway/config".source = ./config/sway/config;
-    home.file.".config/sway/wpp".source = ./config/sway/wpp; 
+    home.file.".config/sway/config".source = ./config;
+    home.file.".config/sway/wpp".source = ./wpp; 
 }
 
