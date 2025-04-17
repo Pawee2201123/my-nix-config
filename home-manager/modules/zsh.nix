@@ -9,22 +9,28 @@
             ll = "ls -l";
             nrs = "sudo nixos-rebuild switch --flake .";
             hms = "home-manager switch --flake .";
+            z = "zathura";
+            ff = "fastfetch";
         };
         history.size = 10000;
-        initExtra = ''
-            zmodload zsh/complist
-            zstyle ':completion:*' menu select
-#vi mode
-            bindkey -v
-            export KEYTIMEOUT=1
-# Use vim keys in tab complete menu:
-            bindkey -M menuselect 'h' vi-backward-char
-            bindkey -M menuselect 'k' vi-up-line-or-history
-            bindkey -M menuselect 'l' vi-forward-char
-            bindkey -M menuselect 'j' vi-down-line-or-history
-            bindkey -v '^?' backward-delete-char
-            bindkey '^R' history-incremental-search-backward
-
+        plugins = [
+            {
+                name = "zsh-vi-mode";
+                src = "${pkgs.zsh-vi-mode}/share/zsh-vi-mode";
+            }
+            {
+                name = "fzf-tab";
+                src = "${pkgs.zsh-fzf-tab}/share/fzf-tab";
+            }
+            {
+                name = "zsh-fzf-history-search";
+                src = "${pkgs.zsh-fzf-history-search}/share/zsh-fzf-history-search";
+            }
+        ];
+        profileExtra = ''
+            if [[ $(id -u) -ge 1000 && $(tty) == "/dev/tty1" && -z $(pgrep sway) ]]; then
+                exec sway
+                    fi
         '';
 
     };
