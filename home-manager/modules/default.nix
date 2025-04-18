@@ -3,7 +3,7 @@
         ./sway
         ./waybar
         ./wlogout
-        ./yazi
+        ./yazi.nix
         ./zsh.nix
         ./foot.nix
         ./git.nix
@@ -13,6 +13,7 @@
         ./zathura.nix
         ./gammastep.nix
         ./syncthing.nix
+        ./zoxide.nix
     ];
 }
 

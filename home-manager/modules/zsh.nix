@@ -9,7 +9,7 @@
             ll = "ls -l";
             nrs = "sudo nixos-rebuild switch --flake .";
             hms = "home-manager switch --flake .";
-            z = "zathura";
+            ztr = "zathura";
             ff = "fastfetch";
         };
         history.size = 10000;

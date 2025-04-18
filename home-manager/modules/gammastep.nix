@@ -5,7 +5,7 @@
     enable = true;
     provider = "manual";
     latitude = 38.3;
-    longitude = 180.8;
+    longitude = 140.8;
     #duskTime = "19:30-23:59";
     #dawnTime = "6:00-8:30";
     temperature = {
