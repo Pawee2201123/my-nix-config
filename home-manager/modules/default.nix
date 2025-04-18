@@ -12,6 +12,7 @@
         ./xdg-user-dirs.nix
         ./zathura.nix
         ./gammastep.nix
+        ./syncthing.nix
     ];
 }
 
