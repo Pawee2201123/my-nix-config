@@ -48,6 +48,7 @@
             { run = "quit"; on = [ "q" ]; }
             { run = "close"; on = [ "<C-q>" ]; }
             { run = "shell -- ripdrag \"$@\""; on = ["<C-n>"];}
+            { run = "plugin relative-motions"; on = [ "m" ]; desc = "Trigger a new relative motion";}
             ];
 
         };
