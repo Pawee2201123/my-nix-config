@@ -48,7 +48,16 @@
             { run = "quit"; on = [ "q" ]; }
             { run = "close"; on = [ "<C-q>" ]; }
             { run = "shell -- ripdrag \"$@\""; on = ["<C-n>"];}
-            { run = "plugin relative-motions"; on = [ "m" ]; desc = "Trigger a new relative motion";}
+            { run = "plugin relative-motions"; on = [ "m" ];   desc = "Trigger a new relative motion";}
+            { run = "plugin relative-motions 1"; on = [ "1" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 2"; on = [ "2" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 3"; on = [ "3" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 4"; on = [ "4" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 5"; on = [ "5" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 6"; on = [ "6" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 7"; on = [ "7" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 8"; on = [ "8" ]; desc = "Move in relative steps";}
+            { run = "plugin relative-motions 9"; on = [ "9" ]; desc = "Move in relative steps";}
             ];
 
         };
