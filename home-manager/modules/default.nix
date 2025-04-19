@@ -3,7 +3,7 @@
         ./sway
         ./waybar
         ./wlogout
-        ./yazi.nix
+        ./yazi
         ./zsh.nix
         ./foot.nix
         ./git.nix
