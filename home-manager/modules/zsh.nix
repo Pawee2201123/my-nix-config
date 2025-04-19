@@ -11,8 +11,8 @@
             hms = "home-manager switch --flake .";
             ztr = "zathura";
             ff = "fastfetch";
-            mh = "man home-configuration.nix"
-            mc = "man configuration.nix"
+            mh = "man home-configuration.nix";
+            mc = "man configuration.nix";
         };
         history.size = 10000;
         plugins = [
