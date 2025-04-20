@@ -87,6 +87,7 @@
             git
             tree
             tmux
+            ciscoPacketTracer8
     ];
 
 #fonts
