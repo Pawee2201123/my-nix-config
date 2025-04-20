@@ -51,6 +51,9 @@
         enable = true;
         wrapperFeatures.gtk = true;
     };
+
+    programs.ydotool.enable = true;
+
 #setup fcitx5
     i18n.inputMethod = {
         type = "fcitx5";
@@ -73,7 +76,7 @@
     users.users.sisyphus = {
         isNormalUser = true;
         description = "sisyphus";
-        extraGroups = [ "networkmanager" "wheel" "input"];
+        extraGroups = [ "networkmanager" "wheel" "input" "ydotool"];
         packages = with pkgs; [];
     };
     security.sudo.wheelNeedsPassword = false;
