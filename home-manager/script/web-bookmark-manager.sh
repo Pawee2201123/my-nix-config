@@ -9,12 +9,22 @@ if [ ! -f "$BOOKMARKS_FILE" ]; then
   exit 1
 fi
 
-# Use fzf to select a bookmark based on URL or tags
+# Use wmenu to select a bookmark based on URL or tags
 selected=$(cat "$BOOKMARKS_FILE" | wmenu -l 30)
 
 # If nothing was selected, exit
 [ -z "$selected" ] && exit
 
 # Extract the URL from the selection
-echo "$selected" | awk -F, '{print $3}' 
+url=$(echo "$selected" | awk -F, '{print $3}')
+
+# Prompt user to choose between browsers
+browser=$(echo -e "librewolf\nbrave" | wmenu -l 2)
+
+# If no browser is selected, exit
+[ -z "$browser" ] && exit
+
+# Execute the chosen browser directly with the URL
+sh -c "$browser \"$url\" &"
+
 
