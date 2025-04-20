@@ -17,7 +17,7 @@ input "type:pointer" accel_profile flat
 output * bg ./wpp fill
 
 bindsym $mod+Shift+x exec wlogout
-bindsym $mod+m exec bm ~/.secret/bookmarks 
+bindsym $mod+m exec ydotool type $(bm ~/.secret/bookmarks )
 
 bindsym $mod+Return exec $term
 
