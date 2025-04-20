@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Check if a database file path is provided, else use a default
-BOOKMARKS_FILE="${1:-./bookmarks}"
+BOOKMARKS_FILE="${1:-$HOME/.secret/bookmarks}"
 
 # Ensure the file exists
 if [ ! -f "$BOOKMARKS_FILE" ]; then
@@ -16,5 +16,5 @@ selected=$(cat "$BOOKMARKS_FILE" | wmenu -l 30)
 [ -z "$selected" ] && exit
 
 # Extract the URL from the selection
-echo "$selected" | awk -F, '{print $3}' | wl-copy;
+echo "$selected" | awk -F, '{print $3}' 
 
