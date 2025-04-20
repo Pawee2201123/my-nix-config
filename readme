@@ -33,6 +33,8 @@ cryptsetup luksDump /dev/sdb4
             git
             tree
             tmux
-            ciscoPacketTracer8
+            ciscoPacketTracer8 # not declarative or reproducible
     ];
+
+# also my current use of yazi plugin is also not declarative or reproducible
 
