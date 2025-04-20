@@ -17,6 +17,8 @@ input "type:pointer" accel_profile flat
 output * bg ./wpp fill
 
 bindsym $mod+Shift+x exec wlogout
+bindsym $mod+b+m exec bm 
+
 bindsym $mod+Return exec $term
 
 # Kill focused window

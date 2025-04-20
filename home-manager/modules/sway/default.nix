@@ -30,5 +30,6 @@
 
     home.file.".config/sway/config".source = ./config;
     home.file.".config/sway/wpp".source = ./wpp; 
+    home.file.".config/sway/bookmarks".source = ./bookmarks; 
 }
 

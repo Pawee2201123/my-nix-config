@@ -42,6 +42,7 @@
             yubikey-manager
 # user script
             (writeShellScriptBin "screenshot" (builtins.readFile ./script/screenshot.sh))
+            (writeShellScriptBin "bm" (builtins.readFile ./script/web-bookmark-manager.sh))
             (writeShellScriptBin "signal-multi-instances" (builtins.readFile ./script/signal-multi-instances.sh))
 #etc
             xdg-user-dirs
