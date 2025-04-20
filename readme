@@ -25,3 +25,14 @@ cryptsetup luksRemoveKey /dev/sdX
 # list key slot
 cryptsetup luksDump /dev/sdb4
 
+# comment out packettracer on new machine
+    environment.systemPackages = with pkgs; [
+        neovim 
+            home-manager
+            wget
+            git
+            tree
+            tmux
+            ciscoPacketTracer8
+    ];
+
