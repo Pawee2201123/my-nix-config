@@ -52,7 +52,6 @@
         wrapperFeatures.gtk = true;
     };
 
-    programs.ydotool.enable = true;
 
 #setup fcitx5
     i18n.inputMethod = {

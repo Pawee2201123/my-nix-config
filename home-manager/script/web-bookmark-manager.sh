@@ -16,5 +16,5 @@ selected=$(cat "$BOOKMARKS_FILE" | wmenu -l 30)
 [ -z "$selected" ] && exit
 
 # Extract the URL from the selection
-echo "$selected" | awk -F, '{print $3}' | wl-copy; wl-paste
+echo "$selected" | awk -F, '{print $3}' | wl-copy;
 
