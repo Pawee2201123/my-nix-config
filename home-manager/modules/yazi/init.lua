@@ -2,7 +2,7 @@
 require("relative-motions"):setup({ show_numbers="relative_absolute", show_motion = true, enter_mode ="first" })
 -- ~/.config/yazi/init.lua
 require("bookmarks"):setup({
-	last_directory = { enable = false, persist = false, mode="dir" },
+	last_directory = { enable = true, persist = false, mode="dir" },
 	persist = "all",
 	desc_format = "full",
 	file_pick_mode = "hover",
