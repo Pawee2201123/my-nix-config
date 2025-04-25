@@ -7,7 +7,7 @@
         ./zsh.nix
         ./foot.nix
         ./git.nix
-        ./neovim.nix
+        ./neovim
         ./tmux.nix
         ./xdg-user-dirs.nix
         ./zathura.nix
