@@ -47,6 +47,7 @@
 #etc
             xdg-user-dirs
             texlive.combined.scheme-full
+            typst
     ];
     };
     programs.home-manager.enable = true;
