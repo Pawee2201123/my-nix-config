@@ -11,15 +11,12 @@
             url = "github:nix-community/disko";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        nixCats = {
-            url = "github:BirdeeHub/nixCats-nvim";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+            nixCats.url = "github:BirdeeHub/nixCats-nvim";
 
         xremap-flake.url = "github:xremap/nix-flake";
     };
 
-    outputs = { nixpkgs, home-manager, disko, nixCats, ... }@inputs: 
+    outputs = { nixpkgs, home-manager, disko, ... }@inputs: 
         let
             system = "x86_64-linux";
         in {
