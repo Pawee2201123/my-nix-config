@@ -16,7 +16,7 @@
         xremap-flake.url = "github:xremap/nix-flake";
     };
 
-    outputs = { nixpkgs, home-manager, disko, nixCats, ... }@inputs: 
+    outputs = { nixpkgs, home-manager, disko, ... }@inputs: 
         let
             system = "x86_64-linux";
         in {
