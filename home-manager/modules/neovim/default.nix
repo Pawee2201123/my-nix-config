@@ -142,7 +142,7 @@ in {
             # unwrappedCfgPath = "/path/to/here";
             # IMPORTANT:
             # your alias may not conflict with your other packages.
-            aliases = [ "vim" "homeVim" ];
+            aliases = [ "v" "vi" "vim" ];
             # neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
             hosts.python3.enable = true;
             hosts.node.enable = true;
