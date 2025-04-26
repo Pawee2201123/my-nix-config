@@ -29,7 +29,7 @@
                 ];
             };
             homeConfigurations.sisyphus = home-manager.lib.homeManagerConfiguration {
-                specialArgs = { inherit inputs; };
+                extraSpecialArgs = { inherit inputs; };
                 pkgs = nixpkgs.legacyPackages.${system};
                 modules = [./home-manager/home.nix];
             };
