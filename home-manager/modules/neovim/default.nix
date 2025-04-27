@@ -73,7 +73,7 @@ in {
             snacks-nvim
             onedark-nvim
             vim-sleuth
-            snipe-nvim
+            arrow-nvim
           ];
         };
 
