@@ -160,7 +160,8 @@ in {
             general = true;
             lua = true;
             nix = true;
-            go = false;
+            go = true;
+            typst = true;
           };
           # anything else to pass and grab in lua with `nixCats.extra`
           extra = {
