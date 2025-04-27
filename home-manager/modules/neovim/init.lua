@@ -761,4 +761,13 @@ require('lze').load {
       },
     },
   },
+  {
+    "tinymist",
+    enabled = nixCats("typst") or false,
+    settings = {
+      formatterMode = "typstyle",
+      exportPDF = "onTYPE",
+      semanticTokens = "disable"
+    },
+  },
 }

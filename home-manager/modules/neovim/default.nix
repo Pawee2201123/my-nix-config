@@ -56,6 +56,11 @@ in {
             go-tools
             go
           ];
+          typst = with pkgs; [
+            typst
+            tinymist
+            typstyle
+          ];
         };
 
         # This is for plugins that will load at startup without using packadd:
@@ -68,6 +73,7 @@ in {
             snacks-nvim
             onedark-nvim
             vim-sleuth
+            snipe-nvim
           ];
         };
 
