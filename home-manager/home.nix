@@ -6,6 +6,10 @@
         username = "sisyphus";
         homeDirectory = "/home/sisyphus";
         stateVersion = "24.11";
+        sessionVariables = {
+            EDITOR = "v";
+            BROWSER = "librewolf";
+        };
 
         packages = with pkgs; [
 #CLI app
