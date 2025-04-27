@@ -476,6 +476,7 @@ require('lze').load {
           -- and configure them here
           lua = nixCats('lua') and { "stylua" } or nil,
           go = nixCats('go') and { "gofmt", "golint" } or nil,
+          typst = nixCats('typst') and { "typstyle" } or nil,
           -- templ = { "templ" },
           -- Conform will run multiple formatters sequentially
           -- python = { "isort", "black" },
@@ -769,10 +770,5 @@ require('lze').load {
   {
     "tinymist",
     enabled = nixCats("typst") or false,
-    settings = {
-      formatterMode = "typstyle",
-      exportPDF = "onTYPE",
-      semanticTokens = "disable"
-    },
   },
 }
