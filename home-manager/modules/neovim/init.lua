@@ -163,6 +163,11 @@ vim.keymap.set('n', "<leader>sM", function() Snacks.picker.man() end, { desc = "
 vim.keymap.set('n', "<leader>sq", function() Snacks.picker.qflist() end, { desc = "Quickfix List" })
 vim.keymap.set('n', "<leader>sR", function() Snacks.picker.resume() end, { desc = "Resume" })
 vim.keymap.set('n', "<leader>su", function() Snacks.picker.undo() end, { desc = "Undo History" })
+ require('arrow').setup({
+    show_icons = true,
+    leader_key = ';', -- Recommended to be a single key
+    buffer_leader_key = 'm', -- Per Buffer Mappings
+  })
 require('lze').load {
   {
     "blink.cmp",
