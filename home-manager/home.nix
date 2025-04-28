@@ -41,6 +41,7 @@
             localsend
             brave
             syncthing
+            libreoffice
 #yubi-key
             yubioath-flutter
             yubikey-manager
