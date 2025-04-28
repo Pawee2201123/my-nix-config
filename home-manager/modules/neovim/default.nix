@@ -60,6 +60,7 @@ in {
             typst
             tinymist
             typstyle
+            typstfmt
           ];
         };
 
