@@ -74,6 +74,7 @@ in {
             onedark-nvim
             vim-sleuth
             arrow-nvim
+            which-key-nvim
           ];
         };
 
