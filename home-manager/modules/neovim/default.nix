@@ -77,8 +77,8 @@ in {
             arrow-nvim
             which-key-nvim
             blink-cmp
-            typst-vim
-            typst-preview-nvim
+            #typst-vim
+            #typst-preview-nvim
           ];
         };
 
