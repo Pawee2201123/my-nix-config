@@ -4,7 +4,7 @@ end
 require("snacks").setup({
   picker = {},
   bigfile = {},
-  image = {},
+--  image = {},
 --  explorer = { replace_netrw = true, },
   lazygit = {},
   terminal = {},
