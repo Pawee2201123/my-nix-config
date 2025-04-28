@@ -10,13 +10,8 @@ local servers = {}
 -- servers.html = {}
 
 -- but you can provide some if you want to!
-servers.tinymist = {
-  settings = {
-    formatterMode = "typstyle",
-    exportPdf = "never",
-    semanticTokens = "disable"
-  }
-}
+servers.tinymist = {}
+
 servers.lua_ls = {
   settings = {
     Lua = {
