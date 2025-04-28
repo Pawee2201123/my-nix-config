@@ -10,7 +10,6 @@ local servers = {}
 -- servers.html = {}
 
 -- but you can provide some if you want to!
-servers.tinymist = {}
 
 servers.lua_ls = {
   settings = {
