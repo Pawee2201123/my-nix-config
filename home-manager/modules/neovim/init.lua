@@ -3,12 +3,7 @@
 -- NOTE: These 2 need to be set up before any plugins are loaded.
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
--- plugin
-require('arrow').setup({
-  show_icons = false,
-  leader_key = ';', -- Recommended to be a single key
-  buffer_leader_key = 'm', -- Per Buffer Mappings
-})
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
