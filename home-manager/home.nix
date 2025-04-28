@@ -28,6 +28,8 @@
             universal-android-debloater
             jmtpfs
             rsync
+            ripgrep
+            fd
 #GUI app
             keepassxc
             librewolf

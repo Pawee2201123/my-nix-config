@@ -75,6 +75,7 @@ in {
             vim-sleuth
             arrow-nvim
             which-key-nvim
+            blink-cmp
           ];
         };
 
@@ -91,12 +92,12 @@ in {
             mini-nvim
             nvim-lspconfig
             vim-startuptime
-            blink-cmp
+            #blink-cmp
             nvim-treesitter.withAllGrammars
             lualine-nvim
             lualine-lsp-progress
             gitsigns-nvim
-            which-key-nvim
+            #which-key-nvim
             nvim-lint
             conform-nvim
             nvim-dap
