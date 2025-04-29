@@ -77,6 +77,7 @@ in {
             arrow-nvim
             which-key-nvim
             blink-cmp
+            nvim-lspconfig
             #typst-vim
             #typst-preview-nvim
           ];
@@ -93,7 +94,7 @@ in {
           ];
           general = with pkgs.vimPlugins; [
             mini-nvim
-            nvim-lspconfig
+            #nvim-lspconfig
             vim-startuptime
             #blink-cmp
             nvim-treesitter.withAllGrammars
