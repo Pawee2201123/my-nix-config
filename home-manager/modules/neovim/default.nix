@@ -78,8 +78,8 @@ in {
             which-key-nvim
             blink-cmp
             nvim-lspconfig
-            #typst-vim
-            #typst-preview-nvim
+            typst-vim
+            typst-preview-nvim
             luasnip
             friendly-snippets
             lualine-nvim
