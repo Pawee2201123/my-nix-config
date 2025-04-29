@@ -80,6 +80,10 @@ in {
             nvim-lspconfig
             #typst-vim
             #typst-preview-nvim
+            luasnip
+            friendly-snippets
+            lualine-nvim
+            lualine-lsp-progress
           ];
         };
 
