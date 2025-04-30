@@ -99,7 +99,7 @@
             sarabun-font
             noto-fonts-cjk-sans
             jigmo
-            #ipaexfont
+            ipaexfont
             kochi-substitute
     ];
 # for xremap
