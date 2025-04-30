@@ -97,6 +97,7 @@
         nerd-fonts.jetbrains-mono
             noto-fonts
             sarabun-font
+            noto-fonts-cjk-sans
     ];
 # for xremap
     services.xremap = {
