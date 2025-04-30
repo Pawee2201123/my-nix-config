@@ -98,6 +98,7 @@
             noto-fonts
             sarabun-font
             noto-fonts-cjk-sans
+            jigmo
     ];
 # for xremap
     services.xremap = {
