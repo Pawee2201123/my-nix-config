@@ -25,6 +25,7 @@
             yt-dlp
             mpv
             ffmpeg
+            swayimg
             android-tools
             universal-android-debloater
             jmtpfs
