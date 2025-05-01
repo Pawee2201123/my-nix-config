@@ -24,6 +24,7 @@
             xdragon
             yt-dlp
             mpv
+            ffmpeg
             android-tools
             universal-android-debloater
             jmtpfs
