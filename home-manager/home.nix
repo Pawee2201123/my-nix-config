@@ -23,6 +23,7 @@
             ripdrag
             xdragon
             yt-dlp
+            ytmdl
             mpv
             ffmpeg
             swayimg
