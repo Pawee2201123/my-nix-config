@@ -110,7 +110,7 @@
                 name = "main remaps";
                 remap = {
                     CapsLock = {
-                        held = "leftctrl";
+                        #held = "leftctrl";
                         alone = "esc";
                     };
                     Ctrl_L = "CapsLock";
