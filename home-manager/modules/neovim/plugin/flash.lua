@@ -1,1 +1,1 @@
-require("flash")
+require("flash").treesitter(opts?)
