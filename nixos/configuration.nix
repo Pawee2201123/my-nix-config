@@ -114,7 +114,8 @@
                         alone = "esc";
                     };
                     Ctrl_L = "CapsLock";
-                    Muhenkan = "backspace";
+                    Muhenkan = "leftctrl";
+                    Henkan = "backspace";
                 };
             }
             ];
