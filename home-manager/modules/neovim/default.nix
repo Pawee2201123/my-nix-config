@@ -84,6 +84,7 @@ in {
             friendly-snippets
             lualine-nvim
             lualine-lsp-progress
+            flash-nvim
           ];
         };
 
