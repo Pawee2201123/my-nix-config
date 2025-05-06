@@ -109,10 +109,13 @@
             {
                 name = "main remaps";
                 remap = {
+                /*
                     CapsLock = {
-                        #held = "leftctrl";
+                        held = "leftctrl";
                         alone = "esc";
                     };
+                    */
+                    CapsLock = "esc";
                     Ctrl_L = "CapsLock";
                     Muhenkan = "leftctrl";
                     Henkan = "backspace";
