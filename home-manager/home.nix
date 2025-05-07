@@ -58,6 +58,7 @@
             xdg-user-dirs
             texlive.combined.scheme-full
             typst
+            typstPackages.cetz
     ];
     };
     programs.home-manager.enable = true;
