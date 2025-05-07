@@ -59,6 +59,7 @@
             texlive.combined.scheme-full
             typst
             typstPackages.cetz
+            typstPackages.plotsy-3d
     ];
     };
     programs.home-manager.enable = true;
