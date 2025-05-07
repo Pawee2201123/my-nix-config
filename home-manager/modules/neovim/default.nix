@@ -85,6 +85,7 @@ in {
             lualine-nvim
             lualine-lsp-progress
             flash-nvim
+            oil-nvim
           ];
         };
 
