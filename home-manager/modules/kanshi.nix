@@ -2,5 +2,19 @@
 {
     services.kanshi = {
         enable = true;
+        extraConfig = ''
+
+            profile mirror {
+                output eDP-1 {
+                    mode 1920x1080
+                        position 0,0
+                }
+
+                output HDMI-A-2 {
+                    mode 2560x1440
+                        position 0,0
+                }
+            }
+        '';
     };
 }
