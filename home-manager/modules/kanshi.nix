@@ -2,7 +2,7 @@
 {
     services.kanshi = {
         enable = true;
-        settings = ''
+        extraConfig = ''
 
             profile mirror {
                 output eDP-1 {
