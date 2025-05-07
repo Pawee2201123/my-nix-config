@@ -6,10 +6,6 @@
         clock24 = true;
         extraConfig = '' 
 # used for less common options, intelligently combines if defined in multiple places.
-# Set the prefix key to Alt+f
-            set-option -g prefix M-f
-            unbind-key C-b
-            bind-key M-f send-prefix
 # esc key no delay
             set -sg escape-time 0
 #enable mouse
