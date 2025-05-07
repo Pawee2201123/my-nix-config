@@ -2,7 +2,7 @@
 {
     services.kanshi = {
         enable = true;
-        extraConfig = ''
+        settings = ''
 
             profile mirror {
                 output eDP-1 {
@@ -11,7 +11,7 @@
                 }
 
                 output HDMI-A-2 {
-                    mode 2560x1440
+                    mode 1920x1080
                         position 0,0
                 }
             }
