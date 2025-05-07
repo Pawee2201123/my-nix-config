@@ -14,7 +14,7 @@
         ./gammastep.nix
         ./syncthing.nix
         ./zoxide.nix
-        ./kanshi.nix
+        #./kanshi.nix
     ];
 }
 
