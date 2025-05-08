@@ -48,6 +48,7 @@
             syncthing
             libreoffice
             lorien
+            openboard
 #yubi-key
             yubioath-flutter
             yubikey-manager
