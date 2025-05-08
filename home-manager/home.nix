@@ -47,6 +47,7 @@
             brave
             syncthing
             libreoffice
+            lorien
 #yubi-key
             yubioath-flutter
             yubikey-manager
