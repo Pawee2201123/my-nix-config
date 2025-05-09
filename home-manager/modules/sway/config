@@ -15,6 +15,7 @@ set $term footclient
 set $menu wmenu-run
 input * xkb_layout "jp"
 input "type:pointer" accel_profile flat
+input * pointer_warping none
 
 output * bg ./wpp fill
 
