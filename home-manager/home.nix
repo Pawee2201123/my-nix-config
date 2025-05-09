@@ -48,7 +48,7 @@
             syncthing
             libreoffice
             lorien
-            openboard
+            rnote
 #yubi-key
             yubioath-flutter
             yubikey-manager
