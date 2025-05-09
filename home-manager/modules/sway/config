@@ -1,5 +1,6 @@
 # autostart program
 exec --no-startup-id fcitx5
+exec_always sudo systemctl restart xremap.service
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
