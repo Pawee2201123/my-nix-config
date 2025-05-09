@@ -117,7 +117,7 @@
                     */
                     CapsLock = "esc";
                     Ctrl_L = "CapsLock";
-                    Muhenkan = "leftctrl";
+                    Muhenkan = "rightctrl";
                     Henkan = "backspace";
                 };
             }
