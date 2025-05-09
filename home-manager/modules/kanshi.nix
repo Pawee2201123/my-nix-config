@@ -2,7 +2,7 @@
 {
     services.kanshi = {
         enable = true;
-        extraConfig = ''
+        settings = ''
 
             profile  {
                 output eDP-1 enable
