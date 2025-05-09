@@ -1,7 +1,6 @@
 # autostart program
 exec --no-startup-id fcitx5
 
-output HDMI-A-2 same-as eDP-1
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
