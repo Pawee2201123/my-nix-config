@@ -14,7 +14,7 @@
                     alias $INTERNAL
             }
 
-            profile home_1 {
+            profile home {
                 output $INTERNAL disable
                 output $HOME enable
             }
