@@ -4,17 +4,15 @@
         enable = true;
         extraConfig = ''
 
-            profile mirror {
-                output eDP-1 {
-                    mode 1920x1080
-                        position 0,0
-                }
-
-                output HDMI-A-2 {
-                    mode 1920x1080
-                        position 0,0
-                }
+            profile  {
+                output eDP-1 enable
+                output DP-4 enable
             }
+            profile  {
+                output eDP-1 enable
+                output HDMI-A-2 enable
+            }
+
         '';
     };
 }
