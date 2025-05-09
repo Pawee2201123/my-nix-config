@@ -3,16 +3,21 @@
     services.kanshi = {
         enable = true;
         extraConfig = ''
-
-            profile  {
-                output eDP-1 enable
-                output DP-4 enable
+            output "Dell Inc. DELL S2721DS B8DDQ43" {
+                mode 1920x1080@60
+                    position 0,0
+                    alias $HOME
             }
-            profile  {
-                output eDP-1 enable
-                output HDMI-A-2 enable
+            output "BOE 0x074F Unknown" {
+                mode 1920x1080@60
+                    position 0,0
+                    alias $INTERNAL
             }
 
-        '';
+            profile home_1 {
+                output $INTERNAL disable
+                output $HOME enable
+            }
+            '';
     };
 }
