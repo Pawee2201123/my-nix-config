@@ -1,7 +1,7 @@
 { ... }: {
     imports = [
         ./sway
-        ./keyd
+        #./keyd
         ./waybar
         ./wlogout
         ./yazi

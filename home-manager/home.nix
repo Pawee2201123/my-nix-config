@@ -33,7 +33,6 @@
             rsync
             ripgrep
             fd
-            keyd
 #GUI app
             keepassxc
             librewolf
