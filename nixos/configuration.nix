@@ -75,7 +75,7 @@
     users.users.sisyphus = {
         isNormalUser = true;
         description = "sisyphus";
-        extraGroups = [ "networkmanager" "wheel" "input" "ydotool"];
+        extraGroups = [ "networkmanager" "wheel" "input" "keyd"];
         packages = with pkgs; [];
     };
     security.sudo.wheelNeedsPassword = false;
