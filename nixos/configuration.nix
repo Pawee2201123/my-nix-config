@@ -89,7 +89,7 @@
             git
             tree
             tmux
-            ciscoPacketTracer8
+            keyd
     ];
 
 #fonts
@@ -139,10 +139,6 @@
                             henkan = "backspace";
                         };
                         otherlayer = {};
-                        librewolf = {
-                            "alt.[" = "C-S-tab";
-                            "alt.]"= "macro(C-tab)";
-                        };
                     };
                 extraConfig = ''
                     '';
