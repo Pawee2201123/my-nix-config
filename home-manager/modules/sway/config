@@ -1,6 +1,6 @@
 # autostart program
 exec --no-startup-id fcitx5
-exec --no-startup-id mkdir -p ~/.config/keyd; keyd-application-mapper -d
+exec --no-startup-id keyd-application-mapper -d
 exec_always systemctl --user restart kanshi.service
 
 # Logo key. Use Mod1 for Alt.
