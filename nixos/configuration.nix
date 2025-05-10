@@ -90,6 +90,7 @@
             tree
             tmux
             keyd
+            ciscoPacketTracer8 
     ];
 
 #fonts
@@ -169,12 +170,16 @@
 # Battery power management
     services.upower.enable = true;
 # yubikey related
+/*
     services.udev.packages = [ pkgs.yubikey-personalization ];
     services.pcscd.enable = true;
     #security.pam.services = {
     #    login.u2fAuth = true;
     #    sudo.u2fAuth = true;
     #};
+    */
+    #vpn
+    services.mullvad-vpn.enable = true;
 }
 
 
