@@ -5,7 +5,7 @@
     imports =
         [ # Include the results of the hardware scan.
         ./hardware-configuration.nix
-            inputs.xremap-flake.nixosModules.default
+            #inputs.xremap-flake.nixosModules.default
             ./disko.nix
         ];
 
