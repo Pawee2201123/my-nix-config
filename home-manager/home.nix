@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: {
+{ config, pkgs, inputs, ...}: {
     imports = [
         ./modules
     ];
@@ -6,6 +6,10 @@
         username = "sisyphus";
         homeDirectory = "/home/sisyphus";
         stateVersion = "24.11";
+        sessionVariables = {
+            EDITOR = "v";
+            BROWSER = "librewolf";
+        };
 
         packages = with pkgs; [
 #CLI app
@@ -19,11 +23,16 @@
             ripdrag
             xdragon
             yt-dlp
+            ytmdl
             mpv
+            ffmpeg
+            swayimg
             android-tools
             universal-android-debloater
             jmtpfs
             rsync
+            ripgrep
+            fd
 #GUI app
             keepassxc
             librewolf
@@ -37,6 +46,9 @@
             localsend
             brave
             syncthing
+            libreoffice
+            lorien
+            rnote
 #yubi-key
             yubioath-flutter
             yubikey-manager
@@ -48,6 +60,8 @@
             xdg-user-dirs
             texlive.combined.scheme-full
             typst
+            typstPackages.cetz
+            typstPackages.plotsy-3d
     ];
     };
     programs.home-manager.enable = true;

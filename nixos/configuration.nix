@@ -5,7 +5,7 @@
     imports =
         [ # Include the results of the hardware scan.
         ./hardware-configuration.nix
-            inputs.xremap-flake.nixosModules.default
+            #inputs.xremap-flake.nixosModules.default
             ./disko.nix
         ];
 
@@ -75,7 +75,7 @@
     users.users.sisyphus = {
         isNormalUser = true;
         description = "sisyphus";
-        extraGroups = [ "networkmanager" "wheel" "input" "ydotool"];
+        extraGroups = [ "networkmanager" "wheel" "input"];
         packages = with pkgs; [];
     };
     security.sudo.wheelNeedsPassword = false;
@@ -89,7 +89,8 @@
             git
             tree
             tmux
-            ciscoPacketTracer8
+            keyd
+            ciscoPacketTracer8 
     ];
 
 #fonts
@@ -97,28 +98,59 @@
         nerd-fonts.jetbrains-mono
             noto-fonts
             sarabun-font
+            noto-fonts-cjk-sans
+            jigmo
+            ipaexfont
+            kochi-substitute
     ];
 # for xremap
+/*
     services.xremap = {
         config = {
             modmap = [
             {
                 name = "main remaps";
                 remap = {
+                /*
                     CapsLock = {
                         held = "leftctrl";
                         alone = "esc";
                     };
+                    CapsLock = "esc";
                     Ctrl_L = "CapsLock";
-                    Muhenkan = "backspace";
+                    Muhenkan = "rightctrl";
+                    Henkan = "backspace";
+                    leftshift = "rightshift";
                 };
             }
             ];
         };
     };
+    */
+    services.keyd = {
+        enable = true;
+        keyboards = {
+            default = {
+                ids = [ "*" ]; 
+                    settings = {
+                        main = {
+                            capslock = "overload(control, esc)"; 
+                            esc = "capslock";
+                            muhenkan = "leftmeta";
+                            henkan = "backspace";
+                        };
+                        otherlayer = {};
+                    };
+                extraConfig = ''
+                    '';
+            };
+        };
+    };
+
     hardware.uinput.enable = true;
     users.groups.uinput.members = ["sisyphus"];
     users.groups.input.members = ["sisyphus"];
+    #users.groups.keyd.members = ["sisyphus"];
 #ssh
     services.openssh = {
         enable = true;
@@ -138,12 +170,19 @@
 # Battery power management
     services.upower.enable = true;
 # yubikey related
+/*
     services.udev.packages = [ pkgs.yubikey-personalization ];
     services.pcscd.enable = true;
     #security.pam.services = {
     #    login.u2fAuth = true;
     #    sudo.u2fAuth = true;
     #};
+    */
+    #vpn
+    services.mullvad-vpn = {
+        enable = true;
+        package = pkgs.mullvad-vpn;
+    };
 }
 
 
