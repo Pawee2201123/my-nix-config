@@ -103,6 +103,7 @@
             kochi-substitute
     ];
 # for xremap
+/*
     services.xremap = {
         config = {
             modmap = [
@@ -114,7 +115,6 @@
                         held = "leftctrl";
                         alone = "esc";
                     };
-                    */
                     CapsLock = "esc";
                     Ctrl_L = "CapsLock";
                     Muhenkan = "rightctrl";
@@ -125,6 +125,27 @@
             ];
         };
     };
+    */
+    services.keyd = {
+        enable = true;
+        keyboards = {
+            default = {
+                ids = [ "*" ]; 
+                    settings = {
+                        main = {
+                            capslock = "esc"; 
+                            esc = "capslock";
+                            muhenkan = "control";
+                            henkan = "backspace";
+                        };
+                        otherlayer = {};
+                    };
+                extraConfig = ''
+                    '';
+            };
+        };
+    };
+
     hardware.uinput.enable = true;
     users.groups.uinput.members = ["sisyphus"];
     users.groups.input.members = ["sisyphus"];
