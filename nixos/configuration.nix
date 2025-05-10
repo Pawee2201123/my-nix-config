@@ -133,8 +133,8 @@
                 ids = [ "*" ]; 
                     settings = {
                         main = {
-                            capslock = "esc"; 
-                            esc = "overload(leftcontrol, esc)";
+                            capslock = "overload(control, esc)"; 
+                            esc = "capslock";
                             muhenkan = "leftcontrol";
                             henkan = "backspace";
                         };
