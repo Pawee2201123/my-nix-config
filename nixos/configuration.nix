@@ -135,7 +135,7 @@
                         main = {
                             capslock = "overload(control, esc)"; 
                             esc = "capslock";
-                            muhenkan = "leftcontrol";
+                            muhenkan = "leftmeta";
                             henkan = "backspace";
                         };
                         otherlayer = {};
