@@ -134,7 +134,7 @@
                     settings = {
                         main = {
                             capslock = "esc"; 
-                            esc = "overload(control, esc)";
+                            esc = "overload(leftcontrol, esc)";
                             muhenkan = "leftcontrol";
                             henkan = "backspace";
                         };
