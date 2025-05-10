@@ -149,7 +149,7 @@
     hardware.uinput.enable = true;
     users.groups.uinput.members = ["sisyphus"];
     users.groups.input.members = ["sisyphus"];
-    users.groups.keyd.members = ["sisyphus"];
+    #users.groups.keyd.members = ["sisyphus"];
 #ssh
     services.openssh = {
         enable = true;
